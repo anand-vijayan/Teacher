@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictionaryUseCase", "Teacher\DictionaryUseCase.csproj", "{1DFF60E0-9A3B-4746-B4A3-F3314867058C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictionaryUseCase", "DictionaryUseCase\DictionaryUseCase.csproj", "{1DFF60E0-9A3B-4746-B4A3-F3314867058C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
