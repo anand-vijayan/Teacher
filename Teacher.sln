@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictionaryUseCase", "Dictio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuncUseCase", "FuncUseCase\FuncUseCase.csproj", "{33428897-2BDD-464D-B59E-DE3A5C1F7E2D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanDataCellUseCase", "CleanDataCellUseCase\CleanDataCellUseCase.csproj", "{9BD80F23-9AC9-4D2D-9AA4-EDD12C9B8AD8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,5 +21,9 @@ Global
 		{33428897-2BDD-464D-B59E-DE3A5C1F7E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33428897-2BDD-464D-B59E-DE3A5C1F7E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33428897-2BDD-464D-B59E-DE3A5C1F7E2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BD80F23-9AC9-4D2D-9AA4-EDD12C9B8AD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BD80F23-9AC9-4D2D-9AA4-EDD12C9B8AD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BD80F23-9AC9-4D2D-9AA4-EDD12C9B8AD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BD80F23-9AC9-4D2D-9AA4-EDD12C9B8AD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
