@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace N_arryTreeDataStructure
+namespace N_aryTreeDataStructure
 {
     class Program
     {

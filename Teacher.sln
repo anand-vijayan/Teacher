@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuncUseCase", "FuncUseCase\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanDataCellUseCase", "CleanDataCellUseCase\CleanDataCellUseCase.csproj", "{9BD80F23-9AC9-4D2D-9AA4-EDD12C9B8AD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N-arryTreeDataStructure", "N-arryTreeDataStructure\N-arryTreeDataStructure.csproj", "{F253C93F-77F5-41FC-9A2E-E0B6FB6484E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N-aryTreeDataStructure", "N-arryTreeDataStructure\N-aryTreeDataStructure.csproj", "{F253C93F-77F5-41FC-9A2E-E0B6FB6484E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,5 +1,5 @@
 ﻿using System;
-namespace N_arryTreeDataStructure
+namespace N_aryTreeDataStructure
 {
     public class MenuItem
     {

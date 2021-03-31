@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace N_arryTreeDataStructure
+namespace N_aryTreeDataStructure
 {
     public class TreeNode
     {
