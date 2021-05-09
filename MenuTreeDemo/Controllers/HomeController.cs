@@ -10,7 +10,7 @@ using MenuTreeDemo.Middleware;
 
 namespace MenuTreeDemo.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : ControllerBase
     {
         private readonly ILogger<HomeController> _logger;
 
@@ -37,35 +37,6 @@ namespace MenuTreeDemo.Controllers
 
         public IActionResult MenuTree()
         {
-            Helper helperObj = new Helper();
-
-            if (helperObj.menuItems != null)
-            {
-                List<TreeNode> treeNodes = helperObj.GetTreeNodes(helperObj.menuItems);
-
-                if (treeNodes != null)
-                {
-                    helperObj.CreateMenuTree(treeNodes);
-
-                    if(helperObj.MenuHtmlText != null)
-                    {
-                        ViewBag.MenuHtmlText = helperObj.MenuHtmlText;
-                    }
-                    else
-                    {
-                        ViewBag.MenuHtmlText = string.Empty;
-                    }
-                }
-                else
-                {
-                    ViewBag.MenuHtmlText = string.Empty;
-                }
-            }
-            else
-            {
-                ViewBag.MenuHtmlText = string.Empty;
-            }
-
             return View();
         }
     }
