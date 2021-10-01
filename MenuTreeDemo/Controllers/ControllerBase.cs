@@ -14,7 +14,7 @@ namespace MenuTreeDemo.Controllers
             GetMenu();
         }
 
-        private void GetMenu()
+        public string GetMenu()
         {
             Helper helperObj = new Helper();
 
@@ -28,22 +28,12 @@ namespace MenuTreeDemo.Controllers
 
                     if (helperObj.MenuHtmlText != null)
                     {
-                        ViewBag.MenuHtmlText = helperObj.MenuHtmlText;
-                    }
-                    else
-                    {
-                        ViewBag.MenuHtmlText = string.Empty;
+                        return helperObj.MenuHtmlText.ToString();
                     }
                 }
-                else
-                {
-                    ViewBag.MenuHtmlText = string.Empty;
-                }
             }
-            else
-            {
-                ViewBag.MenuHtmlText = string.Empty;
-            }
+
+            return string.Empty;
         }
     }
 }

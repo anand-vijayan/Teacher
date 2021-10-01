@@ -1,1 +1,65 @@
-﻿
+﻿.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 999;
+    background: gray;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 30px;
+    background: gray;
+}
+
+.MainContent {
+    margin-left: 250px;
+}
+
+/* Remove the bullets shown by default for menu tree*/
+ul, #MenuTree {
+    list-style-type: none;
+}
+
+/* Style the caret/arrow */
+.caret {
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+  }
+  
+  .caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+  }
+  
+  .caret-down::before {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);  
+  }
+  
+  
+  
+  /* Hide the nested list */
+  .nested {
+    display: none;
+  }
+  
+  /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+  .active {
+    display: block;
+  }

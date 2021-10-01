@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - MenuTreeDemo</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <header>
@@ -33,23 +34,32 @@
     </header>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-2 border-right" style="height:100%">
-                <ul>
-                    @Html.Raw(ViewBag.MenuHtmlText)
-                </ul>
+            <div id="MenuTreeDiv" class="wrapper">
+                <nav id="sidebar">
+                    <div class="sidebar-header">
+                        @Html.Raw(ViewData["Title"])
+                    </div>
+                    <ul id="MenuTree">
+                        @Html.Raw(ViewBag.MenuHtmlText)
+                    </ul>
+                </nav>
             </div>
-            <div class="col-10">
+            <div class="col-10 MainContent">
                 <main role="main" class="container-fluid" style="flex:1 1 auto;">
                     @RenderBody()
                 </main>
             </div>
         </div>
     </div>
-    <footer class="border-top fixed-bottom">
-        <div class="footer-copyright text-center py-3">
-            &copy; 2021 - MenuTreeDemo - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <div class="container-fluid">
+        <div class="row">
+            <footer class="border-top fixed-bottom">
+                <div class="container footer-copyright text-center py-3">
+                    &copy; 2021 - MenuTreeDemo - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                </div>
+            </footer>
         </div>
-    </footer>
+    </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

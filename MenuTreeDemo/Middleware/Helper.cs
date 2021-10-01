@@ -139,7 +139,7 @@ namespace MenuTreeDemo.Middleware
                 {
                     if(treeNodeItem.ChildrenNodes != null && treeNodeItem.ChildrenNodes.Count > 0)
                     {
-                        menuItemHtmlText = $"<li>{treeNodeItem.MenuName}<ul>";
+                        menuItemHtmlText = $"<li><span class=\"caret\">{treeNodeItem.MenuName}</span><ul class=\"nested\">";
                         MenuHtmlText.Append(menuItemHtmlText);
 
                         CreateMenuTree(treeNodeItem.ChildrenNodes);

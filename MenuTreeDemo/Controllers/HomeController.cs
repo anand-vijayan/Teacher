@@ -37,6 +37,7 @@ namespace MenuTreeDemo.Controllers
 
         public IActionResult MenuTree()
         {
+            ViewBag.MenuHtmlText = GetMenu();
             return View();
         }
     }
